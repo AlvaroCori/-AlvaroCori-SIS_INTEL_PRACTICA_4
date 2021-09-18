@@ -1,26 +1,48 @@
+import random
+
+from numpy.random.mtrand import rand
 from Cromosome import Cromosome
+from Cell import Cell
 import pandas as pd
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt 
 #the function return true if a number stay in the range of probability
-def getProbability(prob, size):
-    return prob <= np.random.randint(1,size+1)
+def getProbability(probability):
+    return random.randint(0,1000)/1000 < probability
 def selection():
     return True
-def crossover(prob , cromosome1, cromosome2):
-    if (getProbability(prob, 100)):
-        cromosome1.crossover(cromosome2)
-    return True
 
-def mutation(prob , cromosome):
-    if (getProbability(prob, 100)):
-        cromosome.mutateGen()
-c = Cromosome(10)
-d = Cromosome(10)
-print(c.gens)
-print(d.gens)
-c.crossover(d)
+
+def evolucionate(cell , generations, probabilityCross, probabilityMut):
+    bestResults = [cell.selectBestFitness()] 
+    for i in range(generations):
+        cromosomes=[]
+        for j in range(int(cell.poblation/2)):
+            c1, c2 = np.random.choice(a=cell.cromosomes,size=2,p=cell.probabilities)
+            if (getProbability(probabilityCross)):
+                nc1, nc2 = c1.crossover(c2)
+            else:
+                nc1 = c1.copy()
+                nc2 = c2.copy()
+            if (getProbability(probabilityMut)):
+                nc1.mutateGen()
+                nc2.mutateGen()
+            cromosomes.append(nc1)
+            cromosomes.append(nc2)
+        cell.insertAListOfCromosomes(cromosomes)
+        bestResults.append(cell.selectBestFitness())
+    return bestResults
+
+solution = 20
+cell = Cell(poblation = 100, sizeCromosome = 20)
+for cromosome in evolucionate(cell,20,70,1):
+    if (cromosome):
+        print(cromosome.fitness)
+        if (cromosome.fitness == solution):
+            print("Se hallo el cromosoma objetivo.")
+
+#print(np.random.choice(a=[2,8],size=1,p=[1,0]))
 
 '''
 # Ejemplo ley de grandes números

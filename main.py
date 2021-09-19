@@ -3,6 +3,7 @@ import random
 from numpy.random.mtrand import rand
 from Cromosome import Cromosome
 from Cell import Cell
+import copy as cp
 import pandas as pd
 import numpy as np
 import matplotlib
@@ -23,8 +24,8 @@ def evolucionate(cell , generations, probabilityCross, probabilityMut):
             if (getProbability(probabilityCross)):
                 nc1, nc2 = c1.crossover(c2)
             else:
-                nc1 = c1.copy()
-                nc2 = c2.copy()
+                nc1 = cp.copy(c1)
+                nc2 = cp.copy(c2)
             if (getProbability(probabilityMut)):
                 nc1.mutateGen()
                 nc2.mutateGen()

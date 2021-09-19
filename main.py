@@ -38,7 +38,7 @@ def evolucionate(cell , generations, probabilityCross, probabilityMut):
 solution = 20
 cell = Cell(poblation = 100, sizeCromosome = 20)
 a = 0
-for cromosome in evolucionate(cell,20,70,1):
+for cromosome in evolucionate(cell,20,0.7,0.001):
     if (cromosome):
         a+=1
         print(cromosome.fitness)

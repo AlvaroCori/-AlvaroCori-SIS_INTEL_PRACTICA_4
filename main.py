@@ -36,11 +36,13 @@ def evolucionate(cell , generations, probabilityCross, probabilityMut):
 
 solution = 20
 cell = Cell(poblation = 100, sizeCromosome = 20)
+a = 0
 for cromosome in evolucionate(cell,20,70,1):
     if (cromosome):
+        a+=1
         print(cromosome.fitness)
         if (cromosome.fitness == solution):
-            print("Se hallo el cromosoma objetivo.")
+            print("Se hallo el cromosoma objetivo en la generacion: ",a-1)
 
 #print(np.random.choice(a=[2,8],size=1,p=[1,0]))
 

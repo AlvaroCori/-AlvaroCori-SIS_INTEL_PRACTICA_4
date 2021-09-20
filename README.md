@@ -70,7 +70,111 @@ The first point to experiment is run the algorithm 20 times and see all the resu
 |  20   |    829    | 
 |  AVG  |    277.1  | 
 
-Esta tabla es haciendo siempre crossover y siempre mutacion
+The experiments without crossover areÑ
+
+| Tried    |  Generation  | 
+| :------: | :------: |
+|   1   |   1051    | 
+|   2   |    537    |   
+|   3   |    305    | 
+|   4   |     10    | 
+|   5   |   6091    | 
+|   6   |     10    | 
+|   7   |   2124    | 
+|   8   |    261    | 
+|   9   |    173    | 
+|  10   |   7717    | 
+|  11   |    527    | 
+|  12   |      6    | 
+|  13   |      8    | 
+|  14   |    694    | 
+|  15   |     20    | 
+|  16   |   2569    | 
+|  17   |    397    | 
+|  18   |   1695    | 
+|  19   |    337    | 
+|  20   |    133    | 
+|  AVG  |   1233.3  | 
+
+The experiments without mutations is:
+
+| Tried    |  Generation  | 
+| :------: | :------: |
+|   1   |      | 
+|   2   |        |   
+|   3   |        | 
+|   4   |         | 
+|   5   |       | 
+|   6   |         | 
+|   7   |       | 
+|   8   |        | 
+|   9   |        | 
+|  10   |       | 
+|  11   |       | 
+|  12   |         | 
+|  13   |          | 
+|  14   |        | 
+|  15   |         | 
+|  16   |       | 
+|  17   |        | 
+|  18   |       | 
+|  19   |        | 
+|  20   |        | 
+|  AVG  |     | 
+
+The experiments using probability of crossocer like 0.9
+
+| Tried    |  Generation  | 
+| :------: | :------: |
+|   1   |   189   | 
+|   2   |   250   |   
+|   3   |   290   | 
+|   4   |    10   | 
+|   5   |   137   | 
+|   6   |    30   | 
+|   7   |   246   | 
+|   8   |    61   | 
+|   9   |    19   | 
+|  10   |   140   | 
+|  11   |     1   | 
+|  12   |   834   | 
+|  13   |    31   | 
+|  14   |    93   | 
+|  15   |    98   | 
+|  16   |    71   | 
+|  17   |   207   | 
+|  18   |    13   | 
+|  19   |    62   | 
+|  20   |    18   | 
+|  AVG  |   140   | 
+
+The experiments using probability of crossocer like 0.3
+
+| Tried    |  Generation  | 
+| :------: | :------: |
+|   1   |      | 
+|   2   |        |   
+|   3   |        | 
+|   4   |         | 
+|   5   |       | 
+|   6   |         | 
+|   7   |       | 
+|   8   |        | 
+|   9   |        | 
+|  10   |       | 
+|  11   |       | 
+|  12   |         | 
+|  13   |          | 
+|  14   |        | 
+|  15   |         | 
+|  16   |       | 
+|  17   |        | 
+|  18   |       | 
+|  19   |        | 
+|  20   |        | 
+|  AVG  |     | 
+
+The experiments using always crossover and mutation
 
 | Tried    |  Generation  | 
 | :------: | :------: |
@@ -96,16 +200,9 @@ Esta tabla es haciendo siempre crossover y siempre mutacion
 |  20   |    14    | 
 |  AVG   |  12.6    | 
 
-On average the algorithm needs 12~13 generations to find the better solution
-
-To the next experiment, we tried the same but the probability of the crossover is 0, and these are the results:
+On average the algorithm using always crossover and mutation needs 12~13 generations to find the better solution
 
 
-
-For this experiment, the results are more dispersed, we have like the best result ass 5, and the worse ass 78, the gap is very big, but the average is better with a crossover probability of zero, and there are more results under 10 than the previous experiment.
-
-
-For the next experiment, we tried change the mutation probability to zero, but with a probability of the crossover in 0.7, and the results are:
 
 
 

@@ -200,8 +200,7 @@ The experiments using always crossover and mutation
 |  20   |    14    | 
 |  AVG   |  12.6    | 
 
-On average the algorithm using always crossover and mutation needs 12~13 generations to find the better solution
-
+The next table show the algorithm with the same values in probabilities, but the initial populations changes:
 
 | Tried    |  50 chromosomes  |  100 chromosomes  |  500 chromosomes  |  1000 chromosomes  | 
 | :------: | :------: |:------: |:------: |:------: |
@@ -228,6 +227,109 @@ On average the algorithm using always crossover and mutation needs 12~13 generat
 |  AVG   |  462.1    |    216.1    |     34.1    |     20    |   
 
 
+This experiment is seeing a random example that requires more than 100 generations, and show the best fitness in every generation
 
+| Generation    |  Best Fitness  | 
+| :------: | :------: |
+|  1 |  16 |
+|  2 |  16|
+|  3 |  17|
+|  4 |  17|
+|  5 |  16|
+|  6 |  16|
+|  7 |  16|
+|  8 |  16|
+|  9 |  16|
+|  10 |  16|
+|  11 |  16|
+|  12 |  16|
+|  13 |  16|
+|  14 |  16|
+|  15 |  16|
+|  16 |  16|
+|  17 |  16|
+|  18 |  16|
+|  19 |  16|
+|  20 |  16|
+|  21 |  16|
+|  22 |  16|
+|  23 |  16|
+|  24 |  16|
+|  25 |  16|
+|  26 |  16|
+|  27 |  16|
+|  28 |  16|
+|  29 |  16|
+|  30 |  16|
+|  31 |  16|
+|  32 |  16|
+|  33 |  16|
+|  34 |  16|
+|  35 |  16|
+|  36 |  16|
+|  37 |  16|
+|  38 |  16|
+|  39 |  17|
+|  40 |  17|
+|  41 |  17|
+|  42 |  17|
+|  43 |  17|
+|  44 |  17|
+|  45 |  17|
+|  46 |  17|
+|  47 |  17|
+|  48 |  17|
+|  49 |  17|
+|  50 |  17|
+|  51 |  17|
+|  52 |  17|
+|  53 |  17|
+|  54 |  17|
+|  55 |  17|
+|  56 |  17|
+|  57 |  17|
+|  58 |  17|
+|  59 |  17|
+|  60 |  17|
+|  61 |  17|
+|  62 |  17|
+|  63 |  17|
+|  64 |  17|
+|  65 |  17|
+|  66 |  17|
+|  67 |  17|
+|  68 |  17|
+|  69 |  17|
+|  70 |  17|
+|  71 |  17|
+|  72 |  17|
+|  73 |  17|
+|  74 |  17|
+|  75 |  17|
+|  76 |  17|
+|  77 |  17|
+|  78 |  17|
+|  79 |  17|
+|  80 |  17|
+|  81 |  17|
+|  82 |  17|
+|  83 |  17|
+|  84 |  17|
+|  85 |  17|
+|  86 |  17|
+|  87 |  17|
+|  88 |  17|
+|  89 |  17|
+|  90 |  17|
+|  91 |  17|
+|  92 |  17|
+|  93 |  17|
+|  94 |  17|
+|  95 |  17|
+|  96 |  17|
+|  97 |  17|
+|  98 |  18|
+|  99 |  18|
+|  100 |  18|
 
 

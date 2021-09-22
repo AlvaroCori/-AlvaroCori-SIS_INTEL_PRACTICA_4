@@ -70,7 +70,7 @@ The first point to experiment is run the algorithm 20 times and see all the resu
 |  20   |    829    | 
 |  AVG  |    277.1  | 
 
-The experiments without crossover areÑ
+The experiments without crossover are:
 
 | Tried    |  Generation  | 
 | :------: | :------: |
@@ -100,7 +100,7 @@ The experiments without mutations is imposible if we cut the information of cros
 only max numbers in the parts we can't take the goal of the max fitness.
 
 
-The experiments using probability of crossocer like 0.9
+The experiments using probability of crossover like 0.9
 
 | Tried    |  Generation  | 
 | :------: | :------: |
@@ -126,7 +126,7 @@ The experiments using probability of crossocer like 0.9
 |  20   |    18   | 
 |  AVG  |   140   | 
 
-The experiments using probability of crossocer like 0.3
+The experiments using probability of crossover like 0.3
 
 | Tried    |  Generation  | 
 | :------: | :------: |
@@ -151,6 +151,8 @@ The experiments using probability of crossocer like 0.3
 |  19   |    37   | 
 |  20   |   105   | 
 |  AVG  |  239.6  | 
+
+The best result have the crossover with a probability of 0.9
 
 The experiments using always crossover and mutation
 
@@ -204,111 +206,11 @@ The next table show the algorithm with the same values in probabilities, but the
 |  20   |    368    |    72    |     43    |     17    |   
 |  AVG   |  462.1    |    216.1    |     34.1    |     20    |   
 
+The best result is the population of 1000 chromosomes.
 
 This experiment is seeing a random example that requires more than 100 generations, and show the best fitness in every generation
 
-| Generation    |  Best Fitness  | 
-| :------: | :------: |
-|  1 |  16 |
-|  2 |  16|
-|  3 |  17|
-|  4 |  17|
-|  5 |  16|
-|  6 |  16|
-|  7 |  16|
-|  8 |  16|
-|  9 |  16|
-|  10 |  16|
-|  11 |  16|
-|  12 |  16|
-|  13 |  16|
-|  14 |  16|
-|  15 |  16|
-|  16 |  16|
-|  17 |  16|
-|  18 |  16|
-|  19 |  16|
-|  20 |  16|
-|  21 |  16|
-|  22 |  16|
-|  23 |  16|
-|  24 |  16|
-|  25 |  16|
-|  26 |  16|
-|  27 |  16|
-|  28 |  16|
-|  29 |  16|
-|  30 |  16|
-|  31 |  16|
-|  32 |  16|
-|  33 |  16|
-|  34 |  16|
-|  35 |  16|
-|  36 |  16|
-|  37 |  16|
-|  38 |  16|
-|  39 |  17|
-|  40 |  17|
-|  41 |  17|
-|  42 |  17|
-|  43 |  17|
-|  44 |  17|
-|  45 |  17|
-|  46 |  17|
-|  47 |  17|
-|  48 |  17|
-|  49 |  17|
-|  50 |  17|
-|  51 |  17|
-|  52 |  17|
-|  53 |  17|
-|  54 |  17|
-|  55 |  17|
-|  56 |  17|
-|  57 |  17|
-|  58 |  17|
-|  59 |  17|
-|  60 |  17|
-|  61 |  17|
-|  62 |  17|
-|  63 |  17|
-|  64 |  17|
-|  65 |  17|
-|  66 |  17|
-|  67 |  17|
-|  68 |  17|
-|  69 |  17|
-|  70 |  17|
-|  71 |  17|
-|  72 |  17|
-|  73 |  17|
-|  74 |  17|
-|  75 |  17|
-|  76 |  17|
-|  77 |  17|
-|  78 |  17|
-|  79 |  17|
-|  80 |  17|
-|  81 |  17|
-|  82 |  17|
-|  83 |  17|
-|  84 |  17|
-|  85 |  17|
-|  86 |  17|
-|  87 |  17|
-|  88 |  17|
-|  89 |  17|
-|  90 |  17|
-|  91 |  17|
-|  92 |  17|
-|  93 |  17|
-|  94 |  17|
-|  95 |  17|
-|  96 |  17|
-|  97 |  17|
-|  98 |  18|
-|  99 |  18|
-|  100 |  18|
+![grafic_2](https://github.com/AlvaroCori/-AlvaroCori-SIS_INTEL_PRACTICA_4/blob/main/img/grafico2.png)
 
 ### Then we use a crossover that cut the information of both chromosomes in a randomic position index_random(1, n-2) where n is the quantity of information.
 
@@ -399,6 +301,8 @@ Cromosomes of all cases:   100
 |  AVG   |  53.35    |    208.2    |     631.1    |     21.15    |   
 |  seg.   |  21.63    |    252.41    |     332.41    |     5.15    |   
 
+The best result is the test that we do more crossover (0.999).
+
 We variate the poblation in order to get differents results.
 
 | Tried    |  50 chromosomes  |  100 chromosomes  |  500 chromosomes  |  1000 chromosomes  | 
@@ -424,7 +328,9 @@ We variate the poblation in order to get differents results.
 |  19   |   33    |   26    |     15    |     24    |   
 |  20   |    2605    |    18    |     17    |     11    |   
 |  AVG   |  1741.0    |    35.3    |     13.5    |     14.3    |   
-|  seg.   |  85.45    |    60.41    |     110.36    |     120.47    | 
+|  seg.   |  85.45    |    60.41    |     53.02    |     175.47    | 
+
+The best result is the population of 500 chromosomes.
 
 Now we use:
 Probability of crossover: 0.7
@@ -433,6 +339,29 @@ Size of information for chromosome: 20
 Poblation:  100
 And we will take until the 100° generation.
 
-###  GRAFIC 1
+
 ![grafic_1](https://github.com/AlvaroCori/-AlvaroCori-SIS_INTEL_PRACTICA_4/blob/main/img/grafico1.png)
 ### From matplotlib.pyplot library
+
+#### Beans
+We try to implement an algorithm where we calculate an approximation to the number 1 where the most distant numbers have a lower fitness by subtracting them at least 11 numbers more small have bigger fitness. Also tried to implement the same step but for a more noticeable difference using the factorial, however both cases fail.
+The aleatority of the mutation can't take a well number into 0 to 9. The algorithm go to a result where all the chromosomes have the same quantity of information and in this
+case the crossover is unusuable. When a chromosome mutate if get less fitness the crossover copy to the others and the chromosome returns to a state as it was before mutual if the fitness is better is rarely because the algorithm take a long time to adapted the algorithm, we realize test of a poblation of 6 chromosomes that return the best fitness but in other case we only get less cases.
+
+![grafic_3](https://github.com/AlvaroCori/-AlvaroCori-SIS_INTEL_PRACTICA_4/blob/main/img/grafico3.png)
+### From matplotlib.pyplot library
+
+### Conclusions
+The genetic algorithm is well aplicable for the inteligence artificial, because this let that a input change and the most efficiencial cases can arrive at the output.
+
+If we compare crossover cutting experiments in half with those that are randomly cut we can see a big difference, in conclusion the random cut selection is more efficient because it allows more combinations than just cutting in half. There are even experiments in cutting in half where the best fitness is not found before reaching the generation limit, see the 100 generation limit experiment. Incluse a algorithm in middle cut take more of 4 minutes for get the best fitness while the random cut take
+less than 1 minutes mayoritarity in get the best fitness. 
+
+The means obtained by doing various tests have a lot to do with the crossover and the mutation. For example, when we do not use the crossover we can take a long time to find the best fitness by using only a small chance of mutation.
+
+When we do not make the mutation, in the case of crossover cutting in half it is very impossible to get the highest fitness because in all crossover combinations can not have all the digits in 1. When we make the random cut in the crossover we have more combinations to find the chromosome with the greatest fitness and you can find it, however it is also considerable that it cannot be found because for example if no chromosome has the digit 1 in a specific position you will not be able to find the greatest fitness even making all the combinations.
+
+We can also see that chromosomes that perform more crossover are more likely to leave a legacy with greater fitness in younger generations.
+
+If we compare the population, we can see that the larger the population the result of obtaining the best fitness appears in earlier generations, however when we compare the time it takes a little longer than those with a smaller population.
+

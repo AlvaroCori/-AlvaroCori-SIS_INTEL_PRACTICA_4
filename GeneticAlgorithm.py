@@ -19,8 +19,8 @@ def intentCrossover(c1, c2, probability):
     if (getProbability(probability)):
         nc1, nc2 = c1.crossover(c2)
     else:
-        nc1 = cp.copy(c1)
-        nc2 = cp.copy(c2)
+        nc1 = cp.deepcopy(c1)
+        nc2 = cp.deepcopy(c2)
     return nc1,nc2
 
 def intentMutation(c1,c2,probability):

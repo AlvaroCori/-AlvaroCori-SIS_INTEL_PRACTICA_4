@@ -330,6 +330,14 @@ We variate the poblation in order to get differents results.
 |  AVG   |  1741.0    |    35.3    |     13.5    |     14.3    |   
 |  seg.   |  85.45    |    60.41    |     53.02    |     175.47    | 
 
+![grafic_pop1](https://github.com/AlvaroCori/-AlvaroCori-SIS_INTEL_PRACTICA_4/blob/main/img/graficopopulation1.png)
+
+![grafic_pop2](https://github.com/AlvaroCori/-AlvaroCori-SIS_INTEL_PRACTICA_4/blob/main/img/graficopopulation2.png)
+
+![grafic_pop3](https://github.com/AlvaroCori/-AlvaroCori-SIS_INTEL_PRACTICA_4/blob/main/img/graficopopulation3.png)
+
+![grafic_pop4](https://github.com/AlvaroCori/-AlvaroCori-SIS_INTEL_PRACTICA_4/blob/main/img/graficopopulation4.png)
+
 The best result is the population of 500 chromosomes.
 
 Now we use:
@@ -363,5 +371,9 @@ When we do not make the mutation, in the case of crossover cutting in half it is
 
 We can also see that chromosomes that perform more crossover are more likely to leave a legacy with greater fitness in younger generations.
 
-If we compare the population, we can see that the larger the population the result of obtaining the best fitness appears in earlier generations, however when we compare the time it takes a little longer than those with a smaller population.
+If we compare the population, we can see that the larger the population the result of obtaining the best fitness appears in earlier generations, however when we compare the time it takes a little longer than those with a smaller population. The reason why older populations are more efficient is because we have many potential chromosomes and being able to choose in the selection the most likely to do the crossover can get faster the best fitness see the figure about the populations even though it takes longer to process in the large population.
+
+When we compare the worst and best fitness in a range of 100 generations the worst fitness is usually the first or at least in the first generations being the best fitness that appears after a few generations and at the end usually maintain the highest fitness.
+
+When we use numbers from 0 to 9 instead of bools we can get to a situation where the next generations have identical chromosomes between them and it is very difficult to improve when there is mutual value that raises fitness.
 

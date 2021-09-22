@@ -48,113 +48,35 @@ Python also is a language applicable and recommendable for the Intelligence Arti
 ## Experiments And Results
 ==========================
 ### First we use a crossover that cut the information of both chromosomes by the middle.
-The first point to experiment is run the algorithm 20 times and see all the results and in which generation finds the better solution.
+The table to experiments running the algorithm 20 times and see all the results and in which generation finds the better solution is the next, trying with different values on the probabilities of crossover.
 
-| Tried    |  Generation  | 
-| :------: | :------: |
-|   1   |    406    | 
-|   2   |    119    |   
-|   3   |     86    | 
-|   4   |     24    | 
-|   5   |     63    | 
-|   6   |    251    | 
-|   7   |   1755    | 
-|   8   |     39    | 
-|   9   |    158    | 
-|  10   |     81    | 
-|  11   |    113    | 
-|  12   |     60    | 
-|  13   |     23    | 
-|  14   |    106    | 
-|  15   |    128    | 
-|  16   |     63    | 
-|  17   |   1029    | 
-|  18   |     19    | 
-|  19   |    190    | 
-|  20   |    829    | 
-|  AVG  |    277.1  | 
-
-The experiments without crossover are:
-
-| Tried    |  Generation  | 
-| :------: | :------: |
-|   1   |   1051    | 
-|   2   |    537    |   
-|   3   |    305    | 
-|   4   |     10    | 
-|   5   |   6091    | 
-|   6   |     10    | 
-|   7   |   2124    | 
-|   8   |    261    | 
-|   9   |    173    | 
-|  10   |   7717    | 
-|  11   |    527    | 
-|  12   |      6    | 
-|  13   |      8    | 
-|  14   |    694    | 
-|  15   |     20    | 
-|  16   |   2569    | 
-|  17   |    397    | 
-|  18   |   1695    | 
-|  19   |    337    | 
-|  20   |    133    | 
-|  AVG  |   1233.3  | 
+| Tried    |   Best Generation   |    Best Generation  |    Best Generation  |    Best Generation  |
+| :------: | :------: | :------: | :------: |  :------: |
+|       | C: 0.7 ; M:0.001 | C: 0.9 ; M:0.001 | C: 0.3 ; M:0.001 | C: 0 ; M:0.001 |
+|   1   |    406    |    189   |    684  |   1051    | 
+|   2   |    119    |    250   |    13   |    537    |    
+|   3   |     86    |    290   |    93   |    305    |  
+|   4   |     24    |     10   |   119   |     10    | 
+|   5   |     63    |   137    |     1   |   6091    |  
+|   6   |    251    |     30   |   384   |     10    | 
+|   7   |   1755    |    246   |    46   |   2124    | 
+|   8   |     39    |    61    |   139   |    261    | 
+|   9   |    158    |     19   |    23   |    173    |  
+|  10   |     81    |    140   |  1037   |   7717    | 
+|  11   |    113    |      1   |    21   |    527    |  
+|  12   |     60    |    834   |   303   |      6    |  
+|  13   |     23    |     31   |     1   |      8    | 
+|  14   |    106    |     93   |   810   |    694    | 
+|  15   |    128    |     98   |     2   |     20    |  
+|  16   |     63    |     71   |   353   |   2569    |  
+|  17   |   1029    |    207   |   610   |    397    | 
+|  18   |     19    |     13   |    10   |   1695    | 
+|  19   |    190    |     62   |    37   |    337    |  
+|  20   |    829    |     18   |   105   |    133    |  
+|  AVG  |    277.1  |    140   |  239.6  |   1233.3  |  
 
 The experiments without mutations is imposible if we cut the information of crossover by the middle, because if we compare all the cases and anyone have
 only max numbers in the parts we can't take the goal of the max fitness.
-
-
-The experiments using probability of crossover like 0.9
-
-| Tried    |  Generation  | 
-| :------: | :------: |
-|   1   |   189   | 
-|   2   |   250   |   
-|   3   |   290   | 
-|   4   |    10   | 
-|   5   |   137   | 
-|   6   |    30   | 
-|   7   |   246   | 
-|   8   |    61   | 
-|   9   |    19   | 
-|  10   |   140   | 
-|  11   |     1   | 
-|  12   |   834   | 
-|  13   |    31   | 
-|  14   |    93   | 
-|  15   |    98   | 
-|  16   |    71   | 
-|  17   |   207   | 
-|  18   |    13   | 
-|  19   |    62   | 
-|  20   |    18   | 
-|  AVG  |   140   | 
-
-The experiments using probability of crossover like 0.3
-
-| Tried    |  Generation  | 
-| :------: | :------: |
-|   1   |   684   | 
-|   2   |    13   |   
-|   3   |    93   | 
-|   4   |   119   | 
-|   5   |     1   | 
-|   6   |   384   | 
-|   7   |    46   | 
-|   8   |   139   | 
-|   9   |    23   | 
-|  10   |  1037   | 
-|  11   |    21   | 
-|  12   |   303   | 
-|  13   |     1   | 
-|  14   |   810   | 
-|  15   |     2   | 
-|  16   |   353   | 
-|  17   |   610   | 
-|  18   |    10   | 
-|  19   |    37   | 
-|  20   |   105   | 
-|  AVG  |  239.6  | 
 
 The best result have the crossover with a probability of 0.9
 
@@ -184,7 +106,9 @@ The experiments using always crossover and mutation
 |  20   |    14    | 
 |  AVG   |  12.6    | 
 
-The next table show the algorithm with the same values in probabilities, but the initial populations changes:
+This is an extra experiment to see to see this possibility, and we were surprised by the good results.
+
+The next table show the algorithm with the same values in probabilities (Crossover = 0.7, mutation = 0.001), but the initial populations changes:
 
 | Tried    |  50 chromosomes  |  100 chromosomes  |  500 chromosomes  |  1000 chromosomes  | 
 | :------: | :------: |:------: |:------: |:------: |

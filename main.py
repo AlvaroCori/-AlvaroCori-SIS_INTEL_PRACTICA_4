@@ -1,4 +1,5 @@
-from Cromosome import Cromosome
+from Chromosome import Chromosome
+from ChromosomeNumbers import ChromosomeNumbers
 from Cell import Cell
 import pandas as pd
 import time
@@ -37,22 +38,24 @@ def insertVariables(size,generations,poblation,solution,probabilityCrossover, pr
             variables[5] = float(input())
     return variables
 
-def viewResults(cromosomes):
+def viewResults(chromosomes):
     a = 0
-    for cromosome in cromosomes:
-        if (cromosome):
+    for chromosome in chromosomes:
+        if (chromosome):
             a+=1
-            print(f" ({a}. {cromosome.fitness})",end="")
+            print(f" ({a}. {chromosome.fitness})",end="")
     print("")
-def getAverageFitness(cromosomes):
+def getAverageFitness(chromosomes):
     fitnessSum = 0
-    size = len(cromosomes)
-    for cromosome in cromosomes:
-        fitnessSum += cromosome.fitness
+    size = len(chromosomes)
+    for chromosome in chromosomes:
+        fitnessSum += chromosome.fitness
     return fitnessSum/size
-def viewPlot(cromosomes):
-    size = len(cromosomes)
-    fitnessList = [cromosome.fitness for cromosome in cromosomes]
+def viewPlot(chromosomes):
+    if (chromosomes==[]):
+        return
+    size = len(chromosomes)
+    fitnessList = [chromosome.fitness for chromosome in chromosomes]
     maxValue = max(fitnessList)
     minValue = min(fitnessList)
     average = sum(fitnessList)/len(fitnessList)
@@ -67,18 +70,20 @@ def viewPlot(cromosomes):
     plt.xlabel("Generacion")
     plt.ylabel("Fitness")
     plt.show()
+import math
 def menu():
+    chromosomeClass = Chromosome
     init = 0
     end = 0
     selection = -1
     size = 20
     generations = 100
-    population = 100
+    population = 50
     solution = 20
     probabilityCrossover = 0.7
     probabilityMutation = 0.001
     bestResults = []
-    cell = Cell(population, size)
+    cell = Cell(population, size,chromosomeClass)
     while(selection != 0):
         print("ALGORITMO GENETICO")
         print("------------------")
@@ -99,7 +104,7 @@ def menu():
         if (selection == 1):
             size,generations, population,solution,probabilityCrossover, probabilityMutation = insertVariables(size,generations,population,solution,probabilityCrossover, probabilityMutation)
         elif (selection == 2):
-            cell = Cell(population, size)
+            cell = Cell(population, size,chromosomeClass)
             init = time.time()
             bestResults = evolucionate(cell,generations,probabilityCrossover,probabilityMutation)
             end = time.time()
@@ -109,7 +114,7 @@ def menu():
         elif (selection == 3):
             viewPlot(bestResults)
         elif (selection == 4):
-            cell = Cell(population, size)
+            cell = Cell(population, size,chromosomeClass)
             init = time.time()
             bestResults = evolucionate(cell,generations,probabilityCrossover,probabilityMutation,True, solution)
             end = time.time()
@@ -121,7 +126,7 @@ def menu():
             total = 0
             init = time.time()
             for i in range(n):
-                cell = Cell(population, size)
+                cell = Cell(population, size,chromosomeClass)
                 bestResults = evolucionate(cell,generations,probabilityCrossover,probabilityMutation,True, solution)
                 generation = len(bestResults)
                 total += generation

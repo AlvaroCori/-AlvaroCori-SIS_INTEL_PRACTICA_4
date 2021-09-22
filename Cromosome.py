@@ -13,13 +13,14 @@ class Cromosome:
         self.gens[position]= ~self.gens[position]
         self.evaluateFitness()
     def crossover(self, cromosome):
-        part1 = cromosome.gens[0:int(cromosome.size/2)]
-        part2 = cromosome.gens[int(cromosome.size/2):cromosome.size]
-        newCromosome1 = Cromosome(self.size)
-        newCromosome2 = Cromosome(self.size)
-        newCromosome1.gens = part1 + self.gens[int(self.size/2):self.size]
+        index = random.randint(1,cromosome.size-2)#int(cromosome.size/2)
+        part1 = cromosome.gens[0:index]
+        part2 = cromosome.gens[index:cromosome.size]
+        newCromosome1 = Cromosome(cromosome.size)
+        newCromosome2 = Cromosome(cromosome.size)
+        newCromosome1.gens = part1 + self.gens[index:self.size]
         newCromosome1.evaluateFitness()
-        newCromosome2.gens = self.gens[0:int(self.size/2)] + part2
+        newCromosome2.gens = self.gens[0:index] + part2
         newCromosome2.evaluateFitness()
         return newCromosome1, newCromosome2
         '''

@@ -1,5 +1,9 @@
 # -AlvaroCori-SIS_INTEL_PRACTICA_4
 Algoritmos genericos practica 4 de Sistemas Inteligentes
+
+Alvaro Bryan Cori Sanchez <br>
+Omar Christian Arias Chavez
+
 ## Description Of Problem
 The genetic is a science of biology that study biological inheritance from generation to generation through DNA, the DNA is the essence of many living organisms, the DNA contain information that define the organisms like his shape, size, behavior, etc.
 The chromosomes are highly organized structures, formed by proteins and Gens, the gens in turn contain DNA. When chromosomes are replicating, they can do an exact copy or a combination with another chromosome. Rarely the new chromosome mutates a part of the genetic information that contain

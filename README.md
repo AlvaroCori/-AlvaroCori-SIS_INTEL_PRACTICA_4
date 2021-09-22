@@ -43,7 +43,7 @@ Python also is a language applicable and recommendable for the Intelligence Arti
 
 ## Experiments And Results
 ==========================
-
+### First we use a crossover that cut the information of both chromosomes by the middle.
 The first point to experiment is run the algorithm 20 times and see all the results and in which generation finds the better solution.
 
 | Tried    |  Generation  | 
@@ -96,31 +96,9 @@ The experiments without crossover areÑ
 |  20   |    133    | 
 |  AVG  |   1233.3  | 
 
-The experiments without mutations is:
+The experiments without mutations is imposible if we cut the information of crossover by the middle, because if we compare all the cases and anyone have
+only max numbers in the parts we can't take the goal of the max fitness.
 
-| Tried    |  Generation  | 
-| :------: | :------: |
-|   1   |      | 
-|   2   |        |   
-|   3   |        | 
-|   4   |         | 
-|   5   |       | 
-|   6   |         | 
-|   7   |       | 
-|   8   |        | 
-|   9   |        | 
-|  10   |       | 
-|  11   |       | 
-|  12   |         | 
-|  13   |          | 
-|  14   |        | 
-|  15   |         | 
-|  16   |       | 
-|  17   |        | 
-|  18   |       | 
-|  19   |        | 
-|  20   |        | 
-|  AVG  |     | 
 
 The experiments using probability of crossocer like 0.9
 
@@ -332,4 +310,118 @@ This experiment is seeing a random example that requires more than 100 generatio
 |  99 |  18|
 |  100 |  18|
 
+### Then we use a crossover that cut the information of both chromosomes in a randomic position index_random(1, n-2) where n is the quantity of information.
 
+By the case we use a probability of crossover of 0.0 and a probability of mutation 0.001 is equal in results than the cut in crossover because we don't use
+the crossover, the results are similar only with a little difference because the random values.
+
+For the 3 next tables we use a poblation of 100 chromosomes and 20 spaces of information for each chromosomes.
+
+In this case we use a probability of crossover of 0.7 and a probability of mutation 0.01.
+
+| Tried    |  Generation  | 
+| :------: | :------: |
+|   1   |    21    | 
+|   2   |    29    |   
+|   3   |    22    | 
+|   4   |    55    | 
+|   5   |    28    | 
+|   6   |    25    | 
+|   7   |    29    | 
+|   8   |    28    | 
+|   9   |    15    | 
+|  10   |    16    | 
+|  11   |    23    | 
+|  12   |    16    | 
+|  13   |    33    | 
+|  14   |    47    | 
+|  15   |    20    | 
+|  16   |    18    | 
+|  17   |    17    | 
+|  18   |    11    | 
+|  19   |    27    | 
+|  20   |    12    | 
+|  AVG   |  24.6   |
+
+In this case we use a probability of crossover of 0.7 and a probability of mutation 0.0.
+
+| Tried    |  Generation  | 
+| :------: | :------: |
+|   1   |    25    | 
+|   2   |    24    |   
+|   3   |    14    | 
+|   4   |    20    | 
+|   5   |    30    | 
+|   6   |    21    | 
+|   7   |    34    | 
+|   8   |    27    | 
+|   9   |    32    | 
+|  10   |    36    | 
+|  11   |    27    | 
+|  12   |    27    | 
+|  13   |    34    | 
+|  14   |    14    | 
+|  15   |     8    | 
+|  16   |    22    | 
+|  17   |    31    | 
+|  18   |    43    | 
+|  19   |    31    | 
+|  20   |    32    | 
+|  AVG   |  26.6   |
+
+
+We compare many cases with different probability of crossover.
+Probability of mutation for all cases: 0.001
+Cromosomes of all cases:   100 
+
+| Prob. Crossover    |  0.9  |  0.3  |  0.1 |  0.999  | 
+| :------: | :------: |:------: |:------: |:------: |
+|   1   |   22    |   34    |     1690    |     18    | 
+|   2   |    16    |    68    |    1913    |     18   |     
+|   3   |    21    |   640    |    809    |     22    |   
+|   4   |    44    |   31    |     153    |     35    |   
+|   5   |    17    |   364    |    100    |     25    |   
+|   6   |     27    |    204    |     797    |     10    |   
+|   7   |    34    |   42    |     871    |     8    |   
+|   8   |    20    |    149    |     26    |     24    |  
+|   9   |   22    |   54    |     57    |     17    |  
+|  10   |     26    |    273    |     933    |     11    |  
+|  11   |     27   |    25    |     92    |     24    |   
+|  12   |    29    |    24    |     357    |     22    |   
+|  13   |    572    |   39    |     1590    |     23   |   
+|  14   |    29    |   177    |     74    |     31    |   
+|  15   |    18    |   601    |     684    |      23   |   
+|  16   |     29    |    197    |     908    |      20    |   
+|  17   |    19    |   31    |     154    |    27    |   
+|  18   |     58    |  187    |     28    |     12   |   
+|  19   |   20    |   22    |     425    |     24    |   
+|  20   |    17    |    1002    |     961    |     29    |   
+|  AVG   |  53.35    |    208.2    |     631.1    |     21.15    |   
+|  seg.   |  21.63    |    252.41    |     332.41    |     5.15    |   
+
+We variate the poblation in order to get differents results.
+
+| Tried    |  50 chromosomes  |  100 chromosomes  |  500 chromosomes  |  1000 chromosomes  | 
+| :------: | :------: |:------: |:------: |:------: |
+|   1   |   35    |   27    |     18    |     12    | 
+|   2   |    1628    |    8    |     13    |     83    |     
+|   3   |    4420    |    21    |     15    |     14    |   
+|   4   |    538    |   24    |     15    |     14    |   
+|   5   |    62    |   16    |     18    |     16    |   
+|   6   |     31    |    14    |      8    |     18    |   
+|   7   |    201    |   20    |     20    |     11    |   
+|   8   |    23    |    30    |     16    |     18    |  
+|   9   |   338    |   24    |     11    |     13    |  
+|  10   |     729    |    31    |     13    |     16    |  
+|  11   |     421   |    29    |     8    |     12    |   
+|  12   |    3996    |    30    |     11    |     14    |   
+|  13   |    18187    |   195    |     15    |     12   |   
+|  14   |    28    |   33    |     20    |     44    |   
+|  15   |    37    |   45    |     10    |      9   |   
+|  16   |     19    |    17    |     13    |      18    |   
+|  17   |    1470    |   80    |     8    |    18    |   
+|  18   |     19    |  18    |     7    |     9    |   
+|  19   |   33    |   26    |     15    |     24    |   
+|  20   |    2605    |    18    |     17    |     11    |   
+|  AVG   |  1741.0    |    35.3    |     13.5    |     14.3    |   
+|  seg.   |  85.45    |    60.41    |     110.36    |     120.47    | 

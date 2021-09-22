@@ -78,7 +78,7 @@ def menu():
     selection = -1
     size = 20
     generations = 100
-    population = 50
+    population = 1000
     solution = 20
     probabilityCrossover = 0.7
     probabilityMutation = 0.001

@@ -425,3 +425,14 @@ We variate the poblation in order to get differents results.
 |  20   |    2605    |    18    |     17    |     11    |   
 |  AVG   |  1741.0    |    35.3    |     13.5    |     14.3    |   
 |  seg.   |  85.45    |    60.41    |     110.36    |     120.47    | 
+
+Now we use:
+Probability of crossover: 0.7
+Probability of mutation: 0.001
+Size of information for chromosome: 20
+Poblation:  100
+And we will take until the 100° generation.
+
+###  GRAFIC 1
+![grafic_1](https://github.com/AlvaroCori/-AlvaroCori-SIS_INTEL_PRACTICA_4/blob/main/img/grafico1.png)
+### From matplotlib.pyplot library

@@ -330,13 +330,23 @@ We variate the poblation in order to get differents results.
 |  AVG   |  1741.0    |    35.3    |     13.5    |     14.3    |   
 |  seg.   |  85.45    |    60.41    |     53.02    |     175.47    | 
 
+The next grafics are independient of table values, the grafics demostrate the evolution of fitness in each population. 
+
+## POPULATION 50
 ![grafic_pop1](https://github.com/AlvaroCori/-AlvaroCori-SIS_INTEL_PRACTICA_4/blob/main/img/graficopopulation1.png)
+### From matplotlib.pyplot library
 
+## POPULATION 100
 ![grafic_pop2](https://github.com/AlvaroCori/-AlvaroCori-SIS_INTEL_PRACTICA_4/blob/main/img/graficopopulation2.png)
+### From matplotlib.pyplot library
 
+## POPULATION 500
 ![grafic_pop3](https://github.com/AlvaroCori/-AlvaroCori-SIS_INTEL_PRACTICA_4/blob/main/img/graficopopulation3.png)
+### From matplotlib.pyplot library
 
+## POPULATION 1000
 ![grafic_pop4](https://github.com/AlvaroCori/-AlvaroCori-SIS_INTEL_PRACTICA_4/blob/main/img/graficopopulation4.png)
+### From matplotlib.pyplot library
 
 The best result is the population of 500 chromosomes.
 
@@ -358,6 +368,7 @@ case the crossover is unusuable. When a chromosome mutate if get less fitness th
 
 ![grafic_3](https://github.com/AlvaroCori/-AlvaroCori-SIS_INTEL_PRACTICA_4/blob/main/img/grafico3.png)
 ### From matplotlib.pyplot library
+In this case the max fitness is 200.
 
 ### Conclusions
 The genetic algorithm is well aplicable for the inteligence artificial, because this let that a input change and the most efficiencial cases can arrive at the output.

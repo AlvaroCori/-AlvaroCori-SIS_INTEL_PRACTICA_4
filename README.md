@@ -260,19 +260,19 @@ We variate the poblation in order to get differents results.
 
 The next grafics are independient of table values, the grafics demostrate the evolution of fitness in each population. 
 
-## POPULATION 50
+## POPULATION OF 50
 ![grafic_pop1](https://github.com/AlvaroCori/-AlvaroCori-SIS_INTEL_PRACTICA_4/blob/main/img/graficopopulation1.png)
 ### From matplotlib.pyplot library
 
-## POPULATION 100
+## POPULATION OF 100
 ![grafic_pop2](https://github.com/AlvaroCori/-AlvaroCori-SIS_INTEL_PRACTICA_4/blob/main/img/graficopopulation2.png)
 ### From matplotlib.pyplot library
 
-## POPULATION 500
+## POPULATION OF 500
 ![grafic_pop3](https://github.com/AlvaroCori/-AlvaroCori-SIS_INTEL_PRACTICA_4/blob/main/img/graficopopulation3.png)
 ### From matplotlib.pyplot library
 
-## POPULATION 1000
+## POPULATION OF 1000
 ![grafic_pop4](https://github.com/AlvaroCori/-AlvaroCori-SIS_INTEL_PRACTICA_4/blob/main/img/graficopopulation4.png)
 ### From matplotlib.pyplot library
 

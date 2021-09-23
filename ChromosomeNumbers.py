@@ -15,8 +15,6 @@ class ChromosomeNumbers:
             else:
                 self.fitness+= 2
         
-                
-
     def __init__(self,size):
          self.gens = [random.randint(0,9) for _ in range(size)]
          self.size = size

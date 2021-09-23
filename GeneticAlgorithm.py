@@ -44,6 +44,10 @@ def evolucionate(cell , generations, probabilityCross, probabilityMut,runUntilTh
             chromosomes.append(nc2)
         cell.insertAListOfChromosomes(chromosomes)
         bestFitness = cell.selectBestFitness()
+        #print("Poblacion: ", cell.poblationFitness)
+        #print("Mejor: ", bestFitness.fitness)
+        #print("Mejor: ", bestFitness.gens)
+        #print("-----------------")
         bestResults.append(bestFitness)
         if (runUntilTheSolution and bestFitness.fitness >= solution):
             break

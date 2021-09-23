@@ -70,16 +70,15 @@ def viewPlot(chromosomes):
     plt.xlabel("Generacion")
     plt.ylabel("Fitness")
     plt.show()
-import math
 def menu():
     chromosomeClass = Chromosome
     init = 0
     end = 0
     selection = -1
     size = 20
-    generations = 100
-    population = 1000
-    solution = 20
+    generations = 1000
+    population = 100
+    solution = 200
     probabilityCrossover = 0.7
     probabilityMutation = 0.001
     bestResults = []
@@ -139,6 +138,3 @@ def menu():
 
 menu()
 
-'''
-#https://dcain.etsin.upm.es/~pablo/oye/simulaciones.html
-'''

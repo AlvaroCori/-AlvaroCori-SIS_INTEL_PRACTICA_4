@@ -5,11 +5,15 @@ class ChromosomeNumbers:
         self.fitness = 0
         for gen in self.gens:
             if gen == 0:
-                self.fitness+= 9
+                self.fitness+= 6
             elif gen == 1:
                 self.fitness+= 10
+            elif gen >= 2 and gen <= 4:
+                self.fitness+= 6
+            elif gen >= 5 and gen <= 7:
+                self.fitness+= 4
             else:
-                self.fitness+= 11-gen
+                self.fitness+= 2
         
                 
 
@@ -21,8 +25,6 @@ class ChromosomeNumbers:
     def mutateGen(self):
         position = random.randint(0,self.size-1)
         newNumber = random.randint(0,9)
-        while (newNumber == self.gens[position]):
-            newNumber = random.randint(0,9)
         self.gens[position]= newNumber
         self.evaluateFitness()
 
@@ -37,8 +39,3 @@ class ChromosomeNumbers:
         newCromosome2.gens = self.gens[0:index] + part2
         newCromosome2.evaluateFitness()
         return newCromosome1, newCromosome2
-
-#boolean python
-#https://www.kite.com/python/answers/how-to-get-a-random-boolean-in-python
-#reduce
-#https://www.geeksforgeeks.org/reduce-in-python/

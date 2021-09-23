@@ -24,7 +24,3 @@ class Chromosome:
         newChromosome2.evaluateFitness()
         return newChromosome1, newChromosome2
 
-#boolean python
-#https://www.kite.com/python/answers/how-to-get-a-random-boolean-in-python
-#reduce
-#https://www.geeksforgeeks.org/reduce-in-python/

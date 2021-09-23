@@ -297,15 +297,19 @@ Second tried to implement the same step but for a more noticeable difference usi
 The aleatority of the mutation can't take a well number into 0 to 9. The algorithm go to a result where all the chromosomes have the same quantity of information and in this
 case the crossover is unusuable.  When a chromosome mutate if get less fitness the crossover copy to the others and the chromosome returns to a state as it was before mutual if the fitness is better is rarely because the algorithm take a long time to adapted the algorithm, only in the first and second methods we get the best fitness by a population of 6 chromosomes.
 
-In this moment we get a retr
-By a third intent we get a teacher feedback to adjust some exercise parameters.
+### The search of the best fitness using the first fitness function
+![grafic_3](https://github.com/AlvaroCori/-AlvaroCori-SIS_INTEL_PRACTICA_4/blob/main/img/grafico3.png)
+### From matplotlib.pyplot library
+In this case the max fitness is 200.
+
+By the third intent we get a teacher feedback to adjust some exercise parameters.
 
 In the third intent we implement a fitness function that only sum 10 if the gen of the chromosome be 1 for other numbers (0,2,3,4,5,6,7,8,9) the result is 0, the function get best results only if the probability of mutation be high (0.7).
 
 Then we tried new cases by the next values:
 
 poblation     100<br>
-fitness       20<br>
+fitness       200<br>
 P. Crossover  0.7<br>
 P. Mutation   0.1
 
@@ -316,7 +320,7 @@ For a gen equal a 1 the fitness is 10<br>
 For a gen equal a 2 until 9 the fitness is 4
 
 The results are:<br>
-Generation with the best fitness in a chromsome 7237<br>
+Chromosome with the best fitness in the generation 7237<br>
 422.85 seg -> printing fitness and gens.
 
 In the fifth intent we tried the next function:
@@ -327,7 +331,7 @@ For a gen equal a 2 until 5 the fitness is 4<br>
 For a gen equal a 6 until 9 the fitness is 2
 
 The results are:
-Generation with the best fitness in a chromsome 2459<br>
+Chromosome with the best fitness in the generation 2459<br>
 159.2 seg -> printing fitness and gens.
 
 In the sixth intent we tried the next function:
@@ -339,7 +343,7 @@ For a gen equal a 5 until 7 the fitness is 4<br>
 For a gen equal a 8 and 9 the fitness is 2
 
 The results are:
-Generation with the best fitness in a chromsome 2521<br>
+Chromosome with the best fitness in the generation 2521<br>
 135.82 seg -> printing fitness and gens.<br>
 In other intent the time was:<br>
 83.47 seg -> without print fitness and gens.
@@ -347,16 +351,24 @@ In other intent the time was:<br>
 Using the sixt intent, we tried a intent with a mutation probability of 0.01.
 
 The results are:<br>
-Generation with the best fitness in a chromsome 2521<br>
-135.82 seg -> printing fitness and gens.
+Chromosome with the best fitness in the generation 14452<br>
+209.38 seg -> without printing fitness and gens.
 
 Using the sixt intent, we tried with two intents with a mutation probability of 0.001.
 
+The results are:<br>
+Chromosome with the best fitness in the generation 249397<br>
+5055.04 seg or 84.25 min or 1.40 hours -> without printing fitness and gens.<br>
+Chromosome with the best fitness in the generation 172653<br>
+1726.53 seg or 28.78 min or 0.48 hours -> without printing fitness and gens.
 
-
-![grafic_3](https://github.com/AlvaroCori/-AlvaroCori-SIS_INTEL_PRACTICA_4/blob/main/img/grafico3.png)
+### The search of the best function with the sixth fitness function
+![grafic_4](https://github.com/AlvaroCori/-AlvaroCori-SIS_INTEL_PRACTICA_4/blob/main/img/grafico4.png)
 ### From matplotlib.pyplot library
-In this case the max fitness is 200.
+
+We get the best fitness using the sixth fitness function.
+
+
 
 ### Conclusions
 The genetic algorithm is well aplicable for the inteligence artificial, because this let that a input change and the most efficiencial cases can arrive at the output.
@@ -374,7 +386,7 @@ If we compare the population, we can see that the larger the population the resu
 
 When we compare the worst and best fitness in a range of 100 generations the worst fitness is usually the first or at least in the first generations being the best fitness that appears after a few generations and at the end usually maintain the highest fitness.
 
-When we use numbers from 0 to 9 instead of bools we can get to a situation where the next generations have identical chromosomes between them and it is very difficult to improve when there is mutual value that raises fitness.
+When we use numbers from 0 to 9 instead of bools we can get to a situation where the next generations have identical chromosomes between them and it is very difficult to improve when there is mutual value that raises fitness. When ee place the highest value to the number with the highest fitness (1) and place weights between ranges being the closest to 1 with the highest fitness the function is more effective, The optimal fitness fuction found works well with a high mutation probability but we only realize 2 tries with a very low mutation probability (0.001) because the function take a couple of hours to find the optimal solution. 
 
 ## Bibliografy
 ### Random choice<br>

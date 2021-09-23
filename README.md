@@ -290,9 +290,69 @@ And we will take until the 100° generation.
 ### From matplotlib.pyplot library
 
 #### Beans
-We try to implement an algorithm where we calculate an approximation to the number 1 where the most distant numbers have a lower fitness by subtracting them at least 11 numbers more small have bigger fitness. Also tried to implement the same step but for a more noticeable difference using the factorial, however both cases fail.
+We try to implement an algorithm where we calculate an approximation to the number 1 where the most distant numbers have a lower fitness.
+First we tried subtracting them at least 11 numbers more small have bigger fitness. 
+Second tried to implement the same step but for a more noticeable difference using the factorial, however both cases fail.
+
 The aleatority of the mutation can't take a well number into 0 to 9. The algorithm go to a result where all the chromosomes have the same quantity of information and in this
-case the crossover is unusuable. When a chromosome mutate if get less fitness the crossover copy to the others and the chromosome returns to a state as it was before mutual if the fitness is better is rarely because the algorithm take a long time to adapted the algorithm, we realize test of a poblation of 6 chromosomes that return the best fitness but in other case we only get less cases.
+case the crossover is unusuable.  When a chromosome mutate if get less fitness the crossover copy to the others and the chromosome returns to a state as it was before mutual if the fitness is better is rarely because the algorithm take a long time to adapted the algorithm, only in the first and second methods we get the best fitness by a population of 6 chromosomes.
+
+In this moment we get a retr
+By a third intent we get a teacher feedback to adjust some exercise parameters.
+
+In the third intent we implement a fitness function that only sum 10 if the gen of the chromosome be 1 for other numbers (0,2,3,4,5,6,7,8,9) the result is 0, the function get best results only if the probability of mutation be high (0.7).
+
+Then we tried new cases by the next values:
+
+poblation     100<br>
+fitness       20<br>
+P. Crossover  0.7<br>
+P. Mutation   0.1
+
+In the fourth intent we tried the next function:
+
+For a gen equal a 0 the fitness is 9<br>
+For a gen equal a 1 the fitness is 10<br>
+For a gen equal a 2 until 9 the fitness is 4
+
+The results are:<br>
+Generation with the best fitness in a chromsome 7237<br>
+422.85 seg -> printing fitness and gens.
+
+In the fifth intent we tried the next function:
+
+For a gen equal a 0 the fitness is 9<br>
+For a gen equal a 1 the fitness is 10<br>
+For a gen equal a 2 until 5 the fitness is 4<br>
+For a gen equal a 6 until 9 the fitness is 2
+
+The results are:
+Generation with the best fitness in a chromsome 2459<br>
+159.2 seg -> printing fitness and gens.
+
+In the sixth intent we tried the next function:
+
+For a gen equal a 0 the fitness is 6<br>
+For a gen equal a 1 the fitness is 10<br>
+For a gen equal a 2 until 4 the fitness is 6<br>
+For a gen equal a 5 until 7 the fitness is 4<br>
+For a gen equal a 8 and 9 the fitness is 2
+
+The results are:
+Generation with the best fitness in a chromsome 2521<br>
+135.82 seg -> printing fitness and gens.<br>
+In other intent the time was:<br>
+83.47 seg -> without print fitness and gens.
+
+Using the sixt intent, we tried a intent with a mutation probability of 0.01.
+
+The results are:<br>
+Generation with the best fitness in a chromsome 2521<br>
+135.82 seg -> printing fitness and gens.
+
+Using the sixt intent, we tried with two intents with a mutation probability of 0.001.
+
+
 
 ![grafic_3](https://github.com/AlvaroCori/-AlvaroCori-SIS_INTEL_PRACTICA_4/blob/main/img/grafico3.png)
 ### From matplotlib.pyplot library
@@ -316,3 +376,18 @@ When we compare the worst and best fitness in a range of 100 generations the wor
 
 When we use numbers from 0 to 9 instead of bools we can get to a situation where the next generations have identical chromosomes between them and it is very difficult to improve when there is mutual value that raises fitness.
 
+## Bibliografy
+### Random choice<br>
+https://numpy.org/doc/stable/reference/random/generated/numpy.random.choice.html
+
+### Boolean random python<br>
+https://www.kite.com/python/answers/how-to-get-a-random-boolean-in-python
+
+### Reduce function<br>
+https://www.geeksforgeeks.org/reduce-in-python/
+
+### Aleatory algorithm and grafics<br>
+https://dcain.etsin.upm.es/~pablo/oye/simulaciones.html
+
+### Matplotlyb.pyplot<br>
+https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.html
